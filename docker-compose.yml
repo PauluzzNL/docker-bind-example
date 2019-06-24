@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  bind:
+    build: .
+    image: pauluzznl/bind-example:latest
+    container_name: bind-ex
+    restart: always
+    ports:
+      - 53:53/udp
